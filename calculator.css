@@ -1,0 +1,23 @@
+.ddcalc_citylist li{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+.ddcalc_citylist li:hover{
+    background: #f7eae8;
+    cursor: pointer;
+}
+.ddcalc_citylist{
+    list-style: none;
+    margin:0;
+    padding:0;
+    width: 235px;
+    min-height:0px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #ffffff;
+    max-height: 120px;
+    overflow-y: scroll
+}
