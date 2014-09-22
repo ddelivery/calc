@@ -5,7 +5,7 @@
 var CalcuatorConfig = {
             url: "/calc/sdk/mrozk/ajax.php", // url к обработчику ajax.php
             imageFolder: '/calc/images/companylogos/', //
-            itemMark: '<div><img src="{image}"/> , {price}, {duration}, {companyname}, {companyid}</div>',
+            itemMark: '&lt;div&gt;&lt;img src="{image}"/&gt; , {price}, {duration}, {companyname}, {companyid}&lt;/div&gt;',
 
         };
 </code>
