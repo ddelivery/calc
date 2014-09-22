@@ -1,12 +1,13 @@
 <h1>Калькулятор расчета цены доставки</h1>
 настроить параметры можно через
+<code>
 var CalcuatorConfig = {
             url: "/calc/sdk/mrozk/ajax.php", // url к обработчику ajax.php
             imageFolder: '/calc/images/companylogos/', //
             itemMark: '<div><img src="{image}"/> , {price}, {duration}, {companyname}, {companyid}</div>',
 
         };
-
+</code>
 url - путь к файлу ajax.php который находится в папке sdk
 
 imageFolder - папка с картинками компаний
