@@ -86,6 +86,12 @@
             $(window).on('onCompanyChange', th.onCompanyChange);
             $(window).on('onCityChange', th.onCityChange);
 
+            $(document).click(function (event) {
+                if ($(event.target).closest('.ddcalc_citylist').length == 0 && $(event.target).attr('class') != 'btn-call') {
+                    $('#ddcalc_citylistcont').empty();
+                }
+            });
+
         },
 
         // обрабатывает ивенты
@@ -200,11 +206,12 @@
             var error = 0;
             $('.ddfield').each(function(){
 
+
                 if( $(this).val() == '' ){
                     error = 1
                 }
                 if( $(this).hasClass('int') ){
-                    if( !matchInt.test( $(this).val() ) ){
+                    if( !matchInt.test( $(this).val() ) || ( parseInt($(this).val()) == 0) ){
                         error = 1;
                     }
                 }
