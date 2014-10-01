@@ -1,4 +1,9 @@
 <h1>Калькулятор расчета цены доставки</h1>
+Пример реализации калькулятора представлен  в файле index.php.
+Важно,  чтобы элементы верстки  в файле сохранили названия своих идентификаторов и стилей. Позиционировать и настраивать стили  элементов можно в любом порядке.
+
+
+
 настроить параметры можно через
 <pre>
 <code>
@@ -18,12 +23,13 @@ itemMark - Для того чтобы настроить верстку елем
 соответствуют переменным;
 
 этот объект конфига необходимо передать в параметры DDeliveryCalculator
+Например: <br />
 <pre>
 <code>
     var CalcuatorConfig = {
                 url: "/calc/sdk/mrozk/ajax.php", // url к обработчику ajax.php
                 imageFolder: '/calc/images/companylogos/',
-                itemMark: '<div><img src="{image}"/> , {price}, {duration}, {companyname}, {companyid}</div>',
+                itemMark: '&lt;div&gt;&lt;img src="{image}"/&gt;  , {price}, {duration}, {companyname}, {companyid}</div>',
 
             };
 
