@@ -17,6 +17,22 @@ imageFolder - папка с картинками компаний
 itemMark - Для того чтобы настроить верстку елементов результирующих компаний нужно переопределить параметр, Элементы в скобках
 соответствуют переменным;
 
+этот объект конфига необходимо передать в параметры DDeliveryCalculator
+<pre>
+<code>
+    var CalcuatorConfig = {
+                url: "/calc/sdk/mrozk/ajax.php", // url к обработчику ajax.php
+                imageFolder: '/calc/images/companylogos/',
+                itemMark: '<div><img src="{image}"/> , {price}, {duration}, {companyname}, {companyid}</div>',
+
+            };
+
+            $( document).ready(function(){
+                DDeliveryCalculator.init(CalcuatorConfig);
+            }
+</code>
+</pre>
+
 
 <h1>Можно обрабатывать следующие  события путем переопределения методов объекта DDeliveryCalculator:</h1>
 1. Перед поиском города cityBeforeSend: function(xhr)
